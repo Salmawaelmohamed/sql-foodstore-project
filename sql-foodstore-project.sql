@@ -1,0 +1,27 @@
+CREATE TABLE foodstuffsstore (id INTEGER PRIMARY KEY,name TEXT,Inventory INTEGER, Purchases INTEGER,sales INTEGER,price INTEGER);
+INSERT INTO foodstuffsstore VALUES (1, "rice", 2000, 1000, 1100, 30);
+INSERT INTO foodstuffsstore VALUES (2, "milk", 1000, 800, 950, 28);
+INSERT INTO foodstuffsstore VALUES (3, "sugar", 1500, 900, 1050, 35);
+INSERT INTO foodstuffsstore VALUES (4, "juice", 900, 700, 850, 20);
+INSERT INTO foodstuffsstore VALUES (5, "pasta", 1200, 950, 1000, 25);
+INSERT INTO foodstuffsstore VALUES (6, "oats", 500, 350, 450, 60);
+INSERT INTO foodstuffsstore VALUES (7, "barley", 650, 450, 590, 80);
+INSERT INTO foodstuffsstore VALUES (8, "meat", 1000, 700, 950, 400);
+INSERT INTO foodstuffsstore VALUES (9, "chicken", 2000, 950, 1100, 250);
+INSERT INTO foodstuffsstore VALUES (10, "oil", 2050, 1990, 2000, 70);
+INSERT INTO foodstuffsstore VALUES (11, "yogurt", 650, 450, 590, 10);
+INSERT INTO foodstuffsstore VALUES (12, "sauce", 750, 600, 700, 20);
+INSERT INTO foodstuffsstore VALUES (13, "fruits", 1300, 999, 1090, 55);
+INSERT INTO foodstuffsstore VALUES (14, "vegetables", 1450, 1150, 1200, 15);
+INSERT INTO foodstuffsstore VALUES (15, "spices", 800, 600, 700, 5);
+SELECT * FROM foodstuffsstore 
+WHERE price > 4 ORDER BY price;
+SELECT SUM(price) FROM foodstuffsstore;
+SELECT SUM(Purchases) FROM foodstuffsstore;
+SELECT SUM(Sales) FROM foodstuffsstore;
+SELECT SUM(Inventory) FROM foodstuffsstore;
+SELECT SUM(price) FROM foodstuffsstore GROUP BY price;
+SELECT SUM(Purchases) FROM foodstuffsstore GROUP BY Purchases;
+SELECT SUM(sales) FROM foodstuffsstore GROUP BY sales;
+SELECT SUM(inventory) FROM foodstuffsstore GROUP BY inventory;
+SELECT * FROM foodstuffsstore;
