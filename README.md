@@ -1,19 +1,28 @@
-# Foodstuffs Store SQL Project
+# 🥫 Foodstuffs Store - SQL Inventory Project
 
-This is my first structured SQL project, where I created a table of food items with inventory, sales, purchases, and price.
+This is a beginner-friendly SQL project simulating a food store’s inventory. It includes item names, inventory levels, purchases, sales, and prices.
 
-## 📂 Table: foodstuffsstore
-- **Columns:** id, name, inventory, purchases, sales, price
-- **Data Entries:** 15 food items
+## 📂 Table: `foodstuffsstore`
+- `id` (INT)
+- `name` (TEXT)
+- `inventory` (INT)
+- `purchases` (INT)
+- `sales` (INT)
+- `price` (REAL)
 
-## 📊 Performed Queries
-- Total sales, purchases, inventory
-- Ordered products by price
-- Used GROUP BY to summarize data
+## 📊 SQL Queries Included
+- Calculate total sales, purchases, and remaining inventory
+- Order products by price
+- Group data using `GROUP BY`
 
-## 🛠 Tools
-- Khan Academy SQL Editor
-- GitHub for version control
+## 🛠 Tools Used
+- SQL Editor: Khan Academy / SQLite
+- GitHub for sharing
+
+## 🚀 How to Run
+1. Paste the SQL code into any SQLite-compatible environment.
+2. Execute queries one by one to analyze inventory performance.
 
 ## 👩‍💻 Author
-salma Dev – [GitHub Profile](https://github.com/salmawaelmohamed)
+**Salma Wael**  
+GitHub: [@Salmawaelmohamed](https://github.com/Salmawaelmohamed)
